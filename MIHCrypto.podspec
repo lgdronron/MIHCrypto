@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.10'
 
   s.requires_arc = true
-  s.static_framework = true
+  s.static_framework = false
 
   s.xcconfig = { 'OTHER_CFLAGS' => '-DLIBRESSL', 
         'LIBRARY_SEARCH_PATHS' => '"${PODS_ROOT}/OpenSSL-Universal/lib-ios"' }
